@@ -3,9 +3,9 @@ function TaskForm({ task, setTask, addTask }) {
     <div>
       <input
         type="text"
+        placeholder="Enter task"
         value={task}
         onChange={(e) => setTask(e.target.value)}
-        placeholder="Enter task"
       />
       <button onClick={addTask}>Add</button>
     </div>

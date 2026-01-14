@@ -15,7 +15,9 @@ function TaskItem({ task, index, deleteTask, toggleTask }) {
         {task.text}
       </span>
 
-      <button onClick={() => deleteTask(index)}>Delete</button>
+      <button className="delete-btn" onClick={() => deleteTask(index)}>
+        Delete
+      </button>
     </li>
   );
 }
